@@ -1,0 +1,502 @@
+
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Montserrat:400,600,700');
+
+body {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    background: #1b1b1b;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+	color: #ccc;
+	text-decoration: none;
+}
+
+.menu-btn{
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.default-video-cover{
+	display: block;
+	position: fixed;
+	right: 0px;
+	width: 50vw;
+	color: #fff;
+	height: 100%;
+	background-color: transparent;
+}
+
+.default-video-cover .start-right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.instructions{
+	display: block;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333;
+	background-color: #141414;
+	margin: 20px 0 0 0;
+	max-width: 450px;
+	position: relative;
+	margin: 20px auto 0 auto;
+}
+
+.default-video-cover .start-right img{
+	max-width: calc(100% - 80px);
+}
+
+.menu-btn .material-icons{
+	line-height: 1em;
+}
+
+.main-content{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    }
+
+.movie-box{
+	top: 0px;
+    left: 0px;
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.movie{
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vid-box {
+position: relative;
+    text-align: center;
+    display: none;
+ 
+}
+
+.vid-box img {
+    max-height: calc(100vh - 90px);
+	max-width: calc(100vw - 90px);
+	
+    position: relative;
+    margin: 0 auto;
+    display: block
+}
+
+.vid-holder {
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 30px 0 #000000;
+    box-shadow: 0 0 30px 0 #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    background-image: url(images/eclipse.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 120px 120px;
+}
+
+video,
+iframe,
+.wistia_embed {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    outline: none !important;
+}
+
+.wistia_responsive_wrapper {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.myVideo{
+	display: none;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20%;
+    opacity: .25;
+    transition: all 0.5s;
+    cursor: pointer
+}
+
+.logo img {
+    float: right;
+    width: 20%;
+    height: auto
+}
+
+.logo:hover {
+    opacity: 1
+}
+
+
+.title {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 100;
+    transition: all 0.5s;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.title .material-icons{
+	font-size: 14px;
+	float: right;
+	position: relative;
+    font-size: 14px;
+	margin:  3px 0 0 0;
+}
+
+.menu-overlay{
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.acc-body{
+	display: none;
+	padding: 0 0 8px 0;
+}
+
+.main-menu{
+	display: block;
+	position: absolute;
+	z-index: 999;
+	width: auto;
+	min-width:50vw; 
+	height: 100%;
+	background-color: #1f1f1f;
+	left: 0px;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 40px black;
+	border-style: solid;
+	border-width: 0 1px 0 0 ;
+	border-color: #333;
+}
+
+@media (max-width:1024px) {
+	.main-menu{
+		min-width:calc(100vw - 1px); 
+	}
+	
+	.default-video-cover{
+		width: 100vw;
+	}
+	
+	.instructions{
+		display: none;
+	}
+}
+
+.menu-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: #333;
+	background-color: #141414;
+	color: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 20px black;
+	height: auto;
+	min-height: 61px;
+	line-height: 0.5em; 
+	font-size: 16px;
+	letter-spacing: 0.2em;
+}
+
+.close-menu{
+	display: none;
+	position: absolute;
+	left: 10px;
+	top:18px;
+	left: 15px;
+	cursor: pointer;
+}
+
+.close-menu .material-icons{
+	line-height: 1em;
+}
+
+
+.menu-title img{
+	display: block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	width: 160px;
+	height: auto;
+}
+
+.training-menu{
+	display: block;
+	position: absolute;
+	top:62px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: calc(100% - 62px);
+	overflow-y: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.training-menu li{
+	padding: 20px 20px 10px 20px;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: #333;
+	color: #bcbcbc;
+	line-height: 1.25em;
+	background-color: #000;
+	transition: all 0.5s;
+}
+
+.training-menu li:hover{
+	background-color: #181818;;
+}
+
+.training-menu li:last-child{
+	
+}
+
+.training-menu li h2{
+	margin: 0 0 0 0;
+	padding: 5px 0 13px 0;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: uppercase;
+	/*border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: #333;*/
+}
+
+
+.video-summary{
+	padding: 5px 0 5px 0;
+	display: block;
+	position: relative;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	border-color: #333;
+	margin-top: 15px;
+}
+
+.login{
+	border-radius: 6px;
+	box-shadow: inset 0px 0px 10px black;
+	padding: 30px 10px 30px 10px;
+	background-color: #292929;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #4e4e4e;
+	max-width: calc(100% - 80px);
+}
+
+form{
+	margin: 10px 0 0 0;
+}
+
+form input, form button{
+	width: 280px;
+	max-width: calc(100% - 40px);
+	padding: 10px;
+	display: block;
+	clear: both;
+	margin: 10px auto 10px auto;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 4px;
+	border: none;
+
+}
+
+form button{
+	text-transform: uppercase;
+	background-color: #505050;
+	color: #fff;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #333;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #333;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #333;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #333;
+}
+
+.acc-head .material-icons{
+	float: right;
+	transform: rotate(0);
+	transition: all 0.5s;
+	margin-top:-3px;
+}
+
+.acc-head.active .material-icons{
+	transform: rotate(45deg);
+	top:-10px;
+}
+
+.video-link{
+	text-indent: 5px;
+	padding: 8px 5px 7px 0;
+	transition: all 0.5s;
+	color:#fff;
+	font-weight: 400;
+	background-color: transparent;
+	line-height: 1em;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-color: #333;
+	border-style: solid;
+}
+
+.video-link .material-icons{
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	top:1px;
+	padding: 0 5px 0 0;
+}
+
+
+.video-link:hover{
+	background-color: rgba(240, 240, 240, 0.39);
+	color: #000;
+}
+
+.video-link.active{
+	background-color: #2a2a2a;
+	color: #fff;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #333;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: #5d5c5c;
+}
+
+#wpadminbar{
+	margin-top: -15px;
+	opacity: 0;
+	transition:all 0.5s;
+}
+
+#wpadminbar:hover{
+	margin-top: 0;
+	opacity: 1;
+}
+
+@media (max-width:720px) {
+    .title {
+        font-size: 12px;
+        top: -30px
+    }
+}
+
+@media (max-width:600px) {
+    .title {
+        font-size: 12px;
+        top: -20px
+    }
+}
+
+@media (max-height:530px) {
+    .title {
+        font-size: 12px;
+        top: -30px
+    }
+}
+
+@media (max-height:400px) {
+    .title {
+        font-size: 12px;
+        top: -30px
+    }
+}
