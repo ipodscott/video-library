@@ -46,8 +46,13 @@
 				<div class="movie">
 					<div class="vid-box">
 						<div class="vid-holder">
-							<img src="https://quickdemo.tv/video/images/16x9_bg.png" />
-								<iframe class="vidFrame" src="https://www.youtube.com/embed/0pbLPOrTSsI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
+								<img class="sixteen-nine-img" src="<?php bloginfo('template_directory'); ?>/img/16x9_bg.png" />
+								<img class="widescreen-img" src="<?php bloginfo('template_directory'); ?>/img/bg_widescreen.gif" />
+								<img class="pano-img" src="<?php bloginfo('template_directory'); ?>/img/pano.gif" />
+								<img class="standard-img" src="<?php bloginfo('template_directory'); ?>/img/standard_bg.png" />
+								<img class="pal-img" src="<?php bloginfo('template_directory'); ?>/img/pal.png" />
+								<img class="nat-arch" src="<?php bloginfo('template_directory'); ?>/img/na.gif" />
+								<iframe class="vidFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
 								<video id="myVideo" class="myVideo" src="" controls></video>							
 						</div>
 					</div>

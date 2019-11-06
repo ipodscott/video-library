@@ -44,6 +44,36 @@ $( document ).ready(function() {
 		$('.myVideo').show();	
 	});
 	
+	$(".widescreen-btn").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".widescreen-img").addClass("show")
+    });
+    
+    $(".pano-btn").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".pano-img").addClass("show")
+    });
+    
+    $(".standard-btn").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".standard-img").addClass("show")
+    });
+    
+    $(".sixteen-nine-btn").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".sixteen-nine-img").addClass("show")
+    });
+    
+    $(".pal-btn").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".pal-img").addClass("show")
+    });
+    
+     $(".na-btn").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".nat-arch").addClass("show")
+    });
+	
 	function videoChange(){
 		$('.default-video-cover').fadeOut(500);
 		

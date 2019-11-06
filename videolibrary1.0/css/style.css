@@ -134,6 +134,15 @@ position: relative;
     background-size: 120px 120px;
 }
 
+
+.vid-holder img{
+	display: none;
+}
+
+.vid-holder img.show{
+	display: block;
+}
+
 video,
 iframe,
 .wistia_embed {
@@ -301,7 +310,7 @@ iframe,
 	padding: 0;
 	width: 100%;
 	height: calc(100% - 62px);
-	overflow-y: auto;
+	overflow-y: scroll;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -449,6 +458,7 @@ form button{
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #333;
+    transition: all 0.5s;
 }
  
 ::-webkit-scrollbar-track {
