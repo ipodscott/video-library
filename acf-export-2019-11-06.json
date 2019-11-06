@@ -79,6 +79,35 @@
                 "placeholder": ""
             },
             {
+                "key": "field_5dc2ed2e515a4",
+                "label": "Resolution",
+                "name": "resolution",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "sixteen-nine-btn": "16x9",
+                    "widescreen-btn": "Widescreen",
+                    "pano-btn": "Panovision",
+                    "standard-btn": "Standard",
+                    "pal-btn": "PAL",
+                    "na-btn": "National Archive"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
                 "key": "field_5db4f14772d2f",
                 "label": "YouTube Id",
                 "name": "youtube_id",
