@@ -1,0 +1,362 @@
+[
+    {
+        "key": "group_5db4fbd24f892",
+        "title": "Collection Builder",
+        "fields": [
+            {
+                "key": "field_5db4fbfdc70e8",
+                "label": "Videos",
+                "name": "videos",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "video"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "video_collection"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5db4f010ccf60",
+        "title": "Video",
+        "fields": [
+            {
+                "key": "field_5db4f0ae72d2e",
+                "label": "Select Video Source",
+                "name": "select_video_source",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "youtube": "YouTube",
+                    "mp4_upload": "MP4 Upload",
+                    "remote_mp4": "Remote Mp4"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 1,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5dc2ed2e515a4",
+                "label": "Resolution",
+                "name": "resolution",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "sixteen-nine-btn": "16x9",
+                    "widescreen-btn": "Widescreen",
+                    "pano-btn": "Panovision",
+                    "standard-btn": "Standard",
+                    "pal-btn": "PAL",
+                    "na-btn": "National Archive"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5db4f14772d2f",
+                "label": "YouTube Id",
+                "name": "youtube_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5db4f0ae72d2e",
+                            "operator": "==",
+                            "value": "youtube"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5db4f15c72d30",
+                "label": "MP4 Upload",
+                "name": "mp4_upload",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5db4f0ae72d2e",
+                            "operator": "==",
+                            "value": "mp4_upload"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": "mp4, m4v, MP4, M4V"
+            },
+            {
+                "key": "field_5db4f1b172d31",
+                "label": "Remote MP4",
+                "name": "remote_mp4",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5db4f0ae72d2e",
+                            "operator": "==",
+                            "value": "remote_mp4"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "video"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5dc3011dc25e3",
+        "title": "Video Page Builder",
+        "fields": [
+            {
+                "key": "field_5dc3012fdb0e5",
+                "label": "Video Page Builder",
+                "name": "video_page_builder",
+                "type": "flexible_content",
+                "instructions": "Use this to add videos based on video collection.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_5dc3013ad8252": {
+                        "key": "layout_5dc3013ad8252",
+                        "name": "collection_manager",
+                        "label": "Collection Manager",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5dc30754f50ee",
+                                "label": "Video Menu Items",
+                                "name": "video_menu_items",
+                                "type": "relationship",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "post_type": [
+                                    "video_collection"
+                                ],
+                                "taxonomy": "",
+                                "filters": [
+                                    "search",
+                                    "taxonomy"
+                                ],
+                                "elements": "",
+                                "min": "",
+                                "max": "",
+                                "return_format": "id"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_5dc30c51e907c": {
+                        "key": "layout_5dc30c51e907c",
+                        "name": "add_by_movie",
+                        "label": "Add By Movie",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5dc30c6de907d",
+                                "label": "Group Title",
+                                "name": "group_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5dc30ca8e907e",
+                                "label": "Group Summary",
+                                "name": "group_summary",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": ""
+                            },
+                            {
+                                "key": "field_5dc30ce6e907f",
+                                "label": "Video Menu Items",
+                                "name": "videos",
+                                "type": "relationship",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "post_type": [
+                                    "video"
+                                ],
+                                "taxonomy": "",
+                                "filters": [
+                                    "search",
+                                    "taxonomy"
+                                ],
+                                "elements": "",
+                                "min": "",
+                                "max": "",
+                                "return_format": "id"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "+ Add Content",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
