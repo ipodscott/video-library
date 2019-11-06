@@ -7,9 +7,9 @@
 			<div class="menu-title">MAIN MENU<div class="close-menu"><i class="material-icons"> close </i></div><div></div></div>
 			<ul class="training-menu">
 				<li>
-				<h2 class="acc-head"><?php the_title();?> <i class="material-icons">add_circle_outline</i></h2>
+				<h2 class="acc-head"><?php the_title();?> </h2>
 				
-				<div class="acc-body">
+				<div class="acc-body" style="display:block;">
 						<div class="video-summary">
 							
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
