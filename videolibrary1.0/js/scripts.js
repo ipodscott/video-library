@@ -86,6 +86,12 @@ $( document ).ready(function() {
 		});
 	}
 	
+	
+	 $(".training-menu li").click(function() {
+        $(".training-menu li").removeClass("show");
+        $(this).addClass("show")
+    });
+	
 	var $container = jQuery('.acc-body'), $acc_head = jQuery('.acc-head');
 
 		$acc_head.last().addClass('last');

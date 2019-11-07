@@ -328,8 +328,8 @@ iframe,
 	transition: all 0.5s;
 }
 
-.training-menu li:hover{
-	background-color: #181818;;
+.training-menu li:hover, .training-menu li.show{
+	background-color: #181818;
 }
 
 .training-menu li:last-child{
@@ -450,7 +450,7 @@ form button{
 }
 
 .video-link.active{
-	background-color: #2a2a2a;
+	background-color: #000;
 	color: #fff;
 	cursor: pointer;
 }
