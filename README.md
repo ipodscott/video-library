@@ -3,7 +3,7 @@ WordPress and ACF based video library supports remote url mp4, uploaded mp4, and
 ## Demo
 [Demo Link](http://video.scottsaunders.design/ "Video Library 1.0 Demo")
 ## Screenshots
-![alt text](https://scottsaunders.design/video.scottsaunders.design/vl_1.jpg "Screen One")
+![Screen Shot One](https://video.scottsaunders.design/vl_1.jpg "Screen One")
 ## The following resolutions are supported:
 + 16x9
 + Widescreen
