@@ -1,7 +1,7 @@
 # Video Library 1.0
 WordPress and ACF based video library supports remote url mp4, uploaded mp4, and youtube. More formats will be added in the future.
 ## Features:
-+ Videos are managed as it's own custom post type.
++ Videos are managed as their own custom post type.
 + User has the ability to add videos to custom collections that can be views indpendently of the main library
 + User can add videos as collections on each page or as individual videos to a group.
 ## Demo
