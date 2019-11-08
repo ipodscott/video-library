@@ -11,7 +11,7 @@ WordPress and ACF based video library supports remote url mp4, uploaded mp4, and
 2. Install Advanced Custom Fields Pro
 3. Using the ACF import tool import the acf_export.json import file
 4. Start adding movies.
-> Note: For youtube videos just use each videos unique youtube id.
+> Note: For youtube videos just use each videos unique youtube id. Some Markdown text with <span style="color:blue">some *blue* text</span>.
 ## Demo
 [Demo Link](http://video.scottsaunders.design/ "Video Library 1.0 Demo")
 ## The following resolutions are supported:
