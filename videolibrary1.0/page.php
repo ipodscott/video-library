@@ -21,8 +21,8 @@
 								        <?php setup_postdata($post); ?>
 								        
 								        <li>
-											<h2 class="acc-head"><?php the_title();?> <i class="material-icons">add_circle_outline</i></h2>
-												<div class="acc-body">
+											<h2 class="acc-head <?php if ( 'yes' == get_field('active') ): ?> active <?php endif; ?>"><?php the_title();?> <i class="material-icons">add_circle_outline</i></h2>
+												<div class="acc-body" <?php if ( 'yes' == get_field('active') ): ?> style="display: block";  <?php endif; ?> >
 													<div class="video-summary">
 														
 															<?php the_content(); ?>
@@ -44,8 +44,8 @@
 						<?php elseif(get_row_layout() == "add_by_movie"):?>
 						
 							<li>
-								<h2 class="acc-head"><?php the_sub_field('group_title');?> <i class="material-icons">add_circle_outline</i></h2>
-									<div class="acc-body">
+								<h2 class="acc-head <?php if ( 'yes' == get_sub_field('active') ): ?> active <?php endif; ?>"><?php the_sub_field('group_title');?> <i class="material-icons">add_circle_outline</i></h2>
+									<div class="acc-body" <?php if ( 'yes' == get_sub_field('active') ): ?> style="display: block";  <?php endif; ?> >
 										<div class="video-summary">
 											
 												<p><?php the_sub_field('group_summary');?></p>
@@ -83,8 +83,8 @@
 						<?php elseif(get_row_layout() == "add_by_movie_external"):?>
 							
 							<li>
-								<h2 class="acc-head"><?php the_sub_field('group_title');?> <i class="material-icons">add_circle_outline</i></h2>
-									<div class="acc-body">
+								<h2 class="acc-head <?php if ( 'yes' == get_sub_field('active') ): ?> active <?php endif; ?>"><?php the_sub_field('group_title');?> <i class="material-icons">add_circle_outline</i></h2>
+									<div class="acc-body" <?php if ( 'yes' == get_sub_field('active') ): ?> style="display: block";  <?php endif; ?> >
 										<div class="video-summary">
 											
 												<p><?php the_sub_field('group_summary');?></p>
