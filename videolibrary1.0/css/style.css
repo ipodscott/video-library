@@ -17,7 +17,18 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    
+     -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+    
 }
+
+
 
 a{
 	color: #ccc;
@@ -228,6 +239,7 @@ iframe,
 	padding: 0 0 8px 0;
 }
 
+
 .main-menu{
 	display: block;
 	position: absolute;
@@ -302,7 +314,7 @@ iframe,
 	height: auto;
 }
 
-.training-menu{
+.video-menu{
 	display: block;
 	position: absolute;
 	top:62px;
@@ -317,45 +329,44 @@ iframe,
 }
 
 
-.training-menu li{
-	padding: 20px 20px 10px 20px;
+.video-menu li{
+	background-color: #181818;
 	border-style: solid;
 	border-width: 0 0 1px 0;
 	border-color: #333;
 	color: #bcbcbc;
 	line-height: 1.25em;
-	background-color: #000;
 	transition: all 0.5s;
+	cursor: pointer;
 }
 
-.training-menu li:hover, .training-menu li.show{
-	background-color: #181818;
-}
-
-.training-menu li:last-child{
-	
-}
-
-.training-menu li h2{
+.video-menu li h2{
 	margin: 0 0 0 0;
-	padding: 5px 0 13px 0;
+	padding: 20px 20px 20px 20px;
 	font-weight: 300;
 	font-size: 18px;
+	cursor: pointer;
 	text-transform: uppercase;
+	background-color: #000;	
+	transition: all 0.5s;
 	/*border-style: solid;
 	border-width: 0 0 1px 0;
 	border-color: #333;*/
 }
 
 
+.h2.active{
+	background-color: #000;
+}
+
+
 .video-summary{
-	padding: 5px 0 5px 0;
 	display: block;
 	position: relative;
 	border-style: solid;
 	border-width: 1px 0 0 0;
 	border-color: #333;
-	margin-top: 15px;
+	padding: 20px;
 }
 
 .login{
@@ -418,6 +429,10 @@ form button{
 	top:-10px;
 }
 
+
+li > .acc-head.active  {
+	background-color: #1f1f1f;
+}
 .video-link{
 	text-indent: 5px;
 	padding: 8px 5px 7px 0;
@@ -426,14 +441,22 @@ form button{
 	font-weight: 400;
 	background-color: transparent;
 	line-height: 1em;
-	margin: 0 0 10px 0;
+	margin: 0 auto 10px auto;
 	cursor: pointer;
 	font-size: 14px;
 	text-transform: uppercase;
 	border-width: 1px;
 	border-color: #333;
 	border-style: solid;
+	display: block;
+	position: relative;
+	width: calc(100% - 40px);
 }
+
+.acc-body .video-link:last-child{
+	margin: 0 auto 20px auto;
+}
+
 
 .video-link .material-icons{
 	display: inline-block;

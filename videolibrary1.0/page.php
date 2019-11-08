@@ -4,7 +4,7 @@
 		<div class="menu-overlay"></div>
 		<div class="main-menu">
 			<div class="menu-title">MAIN MENU<div class="close-menu"><i class="material-icons"> close </i></div><div></div></div>
-			<ul class="training-menu">
+			<ul class="video-menu">
 					
 					
 					<?php while(has_sub_field("video_page_builder")): ?>
@@ -80,7 +80,43 @@
 									</div>
 							</li>
 						 			
-						<?php elseif(get_row_layout() == "magazines"):?>
+						<?php elseif(get_row_layout() == "add_by_movie_external"):?>
+							
+							<li>
+								<h2 class="acc-head"><?php the_sub_field('group_title');?> <i class="material-icons">add_circle_outline</i></h2>
+									<div class="acc-body">
+										<div class="video-summary">
+											
+												<p><?php the_sub_field('group_summary');?></p>
+										
+										</div>
+										
+										
+											     
+											 <?php if(get_sub_field('videos')): ?>
+											 <?php while(has_sub_field('videos')): ?>
+					
+											 	<?php $selectVid = get_sub_field('select_video_source'); if($selectVid == "youtube"){ ?>
+											 	
+											 	<div class="video-link tube-link <?php the_sub_field('resolution');?>" vidURL="https://www.youtube.com/embed/<?php the_sub_field('youtube_id');?>?rel=0"><i class="material-icons">video_label</i> <?php the_sub_field('video_title');?></div>
+											  
+											 	 <?php }else if ($selectVid == "mp4_upload"){ ?>
+											   
+											   	<div class="video-link <?php the_sub_field('resolution');?> mp4-link" mp4Url="<?php the_sub_field('mp4_upload');?>"><i class="material-icons">video_label</i> <?php the_sub_field('video_title');?></div>
+											  
+											   	 <?php }else{ ?>
+											  
+											  	<div class="video-link <?php the_sub_field('resolution');?> mp4-link"  mp4Url="<?php the_sub_field('remote_mp4');?>"><i class="material-icons">video_label</i> <?php the_sub_field('video_title');?></div>
+											  	
+											  	 <?php } ?>
+											 		
+											 <?php endwhile; ?>
+											 <?php endif; ?>
+											
+										
+									</div>
+							</li>
+
 									
 								
 						<?php elseif(get_row_layout() == "toys"):?>

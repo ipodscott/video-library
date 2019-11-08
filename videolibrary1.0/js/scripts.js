@@ -8,9 +8,10 @@ $( document ).ready(function() {
    
     
     $( ".menu-btn" ).click(function() {
+	    document.getElementById('myVideo').pause();
 		$('.menu-overlay').fadeIn(500, function(){
 			$('.main-menu').fadeIn(500);
-			$('.close-menu').fadeIn(500);	
+			$('.close-menu').fadeIn(500);
 		});
 	});
 	
@@ -73,6 +74,11 @@ $( document ).ready(function() {
         $(".vid-holder img").removeClass("show");
         $(".nat-arch").addClass("show")
     });
+    
+    $(".f").click(function() {
+        $(".vid-holder img").removeClass("show");
+        $(".vintage-wide").addClass("show")
+    });
 	
 	function videoChange(){
 		$('.default-video-cover').fadeOut(500);
@@ -87,8 +93,8 @@ $( document ).ready(function() {
 	}
 	
 	
-	 $(".training-menu li").click(function() {
-        $(".training-menu li").removeClass("show");
+	 $(".video-menu li").click(function() {
+        $(".video-menu li").removeClass("show");
         $(this).addClass("show")
     });
 	

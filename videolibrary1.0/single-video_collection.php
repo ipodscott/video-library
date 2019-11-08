@@ -5,7 +5,7 @@
 		<div class="menu-overlay"></div>
 		<div class="main-menu">
 			<div class="menu-title">MAIN MENU<div class="close-menu"><i class="material-icons"> close </i></div><div></div></div>
-			<ul class="training-menu">
+			<ul class="video-menu">
 				<li>
 				<h2 class="acc-head"><?php the_title();?> </h2>
 				

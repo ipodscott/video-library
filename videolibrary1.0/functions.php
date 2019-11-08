@@ -60,7 +60,7 @@ function create_posttype_video() {
 		array(
 			'labels' => array(
 				'name' => __( 'Videos' ),
-				'singular_name' => __( 'video' )
+				'singular_name' => __( 'Video' )
 			),
 			'show_in_rest' => true,
 			'public' => true,
