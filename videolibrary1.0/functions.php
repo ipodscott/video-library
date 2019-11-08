@@ -91,48 +91,6 @@ add_action( 'init', 'my_taxonomies_videos', 0 );
 
 
 
-// Create CPT for Videos
-
-// Our custom post type function
-function create_posttype_video_collection() {
-
-	register_post_type( 'video_collection',
-	// CPT Options
-		array(
-			'labels' => array(
-				'name' => __( 'Video Collection' ),
-				'singular_name' => __( 'Video Collection' )
-			),
-			'show_in_rest' => true,
-			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'video_collection'),
-		)
-	);
-}
-
-// Create Video Collection Taxonomy
-function my_taxonomies_video_collection() {
-	$labels = array(
-		'name'              => _x( 'Collections Categories', 'taxonomy general name' ),
-		'singular_name'     => _x( 'Collection Category', 'taxonomy singular name' ),
-		'menu_name'         => __( 'Collection Categories' ),
-	);
-	$args = array(
-		'show_in_rest' => true,
-		'labels' => $labels,
-		'hierarchical' => true,
-	);
-	register_taxonomy( 'collection_category', 'video_collection', $args );
-}
-add_action( 'init', 'my_taxonomies_video_collection', 0 );
-
-
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype_video_collection' );
-
-
-
 // Custom CSS Styles
 
 function custom_admin_js() {

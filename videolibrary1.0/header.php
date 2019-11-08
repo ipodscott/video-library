@@ -71,7 +71,7 @@
 								<img class="pal-img" src="<?php bloginfo('template_directory'); ?>/img/pal.png" />
 								<img class="nat-arch" src="<?php bloginfo('template_directory'); ?>/img/na.gif" />
 								<img class="vintage-wide" src="<?php bloginfo('template_directory'); ?>/img/vintage_wide.gif" />
-								<iframe class="vidFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
+								<iframe class="vidFrame" src="https://www.youtube.com/embed/DMxOk3AIAVU?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
 								<video id="myVideo" class="myVideo" src="" controls></video>							
 						</div>
 					</div>

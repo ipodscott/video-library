@@ -42,7 +42,10 @@ $( document ).ready(function() {
 		$('.vidFrame').hide();
 		$('.vidFrame').attr("src", "empty");
 		$('.myVideo').attr("src", $(this).attr("mp4url"));
-		$('.myVideo').show();	
+		$('.myVideo').show(function(){
+			 document.getElementById('myVideo').play();
+		});
+		
 	});
 	
 	$(".widescreen-btn").click(function() {
@@ -75,7 +78,7 @@ $( document ).ready(function() {
         $(".nat-arch").addClass("show")
     });
     
-    $(".f").click(function() {
+    $(".vintage-wide-btn").click(function() {
         $(".vid-holder img").removeClass("show");
         $(".vintage-wide").addClass("show")
     });
