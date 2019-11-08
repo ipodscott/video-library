@@ -1,11 +1,17 @@
 # Video Library 1.0
 WordPress and ACF based video library supports remote url mp4, uploaded mp4, and youtube. More formats will be added in the future.
 ## Features:
-+ Videos are managed as their own custom post type.
-+ User has the ability to add videos to custom collections that can be views indpendently of the main library
-+ User can add videos as collections on each page or as individual videos to a group.
++ Videos can be managed as their own custom posttype, or added à la carte to each page indpendent of the video custom posttype.
++ User has the ability to add videos to custom collections that can be viewed indpendently.
++ User can add videos as collections on each page or as individual videos to a group across multiple pages.
 + iPad support is included for iOS and iPadOS fullscreen apps.
-+ Added support for adding movies a la cart without adding them to the CMS.
+## Installation:
+1. Install the latest version of wordpress
+2. Install Advanced Custom Fields Pro
+3. Using the ACF import tool import the acf_export.json import file
+4. Start adding movies.
+> Note: For youtube you only need each video's unique youtube id. See the highlighted section in screenshot below:
+![YouTube id screenshot](http://video.scottsaunders.design/yt_screenshot.png "YouTube id screenshot")
 ## Demo
 [Demo Link](http://video.scottsaunders.design/ "Video Library 1.0 Demo")
 ## The following resolutions are supported:
