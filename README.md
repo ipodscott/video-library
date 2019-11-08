@@ -6,6 +6,8 @@ WordPress and ACF based video library supports remote url mp4, uploaded mp4, and
 + User can add videos as collections on each page or as individual videos to a group.
 + iPad support is included for iOS and iPadOS fullscreen apps.
 + Added support for adding movies a la cart without adding them to the CMS.
+## Installation:
+- After WordPress has been installed. Install
 ## Demo
 [Demo Link](http://video.scottsaunders.design/ "Video Library 1.0 Demo")
 ## The following resolutions are supported:
