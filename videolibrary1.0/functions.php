@@ -15,9 +15,12 @@ add_action('init', 'add_scipts');
 // Add Styles
 function prefix_add_footer_styles() {
 	wp_enqueue_style( 'googlefonts', '//fonts.googleapis.com/css?family=Material+Icons',true,'1.1','all');
+	wp_enqueue_style( 'liberator', get_template_directory_uri() . '/fonts/stylesheet.css',true,'1.1','all');
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/style.css',true,'1.1','all');
 
 };
+
+
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 
 
@@ -90,6 +93,12 @@ function my_taxonomies_videos() {
 add_action( 'init', 'my_taxonomies_videos', 0 );
 
 
+
+// Add ACF Options Page
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
 
 // Custom CSS Styles
 

@@ -1,6 +1,6 @@
 	<div class="load-overlay">
 			<div class="login">
-				<img src="<?php bloginfo('template_directory'); ?>/img/video_library_logo.svg" alt="Video Library	" />
+				<img src="<?php the_field('branding_logo', 'option'); ?>" alt="Logo" />
 				
 								
 			</div>

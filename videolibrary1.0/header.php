@@ -80,7 +80,44 @@
 		</div>
 		
 		<div class="default-video-cover">
-			<div class="start-right">
-				<img src="<?php bloginfo('template_directory'); ?>/img/video_library_logo.svg" alt="Video Library 1.0" />
-			</div>
+			
+			<?php $selectMainBackground = get_field('select_main_background'); if($selectMainBackground == "custom_background"){ ?>
+			
+				<div class="start-right" style="background-image: url(<?php the_field('main_background_image');?>);">
+					
+					<?php $customBranding = get_field('custom_branding'); if($customBranding == "default"){ ?>
+					
+					<div class="right-title"><?php the_title();?></div>
+					
+					<?php }else if ($customBranding == "image"){ ?>
+					
+					<img src="<?php the_field('custom_logo'); ?>" alt="Custom Logo" />
+					
+					<?php }else{ ?>
+					
+					<div class="right-title"><?php the_field('custom_text');?></div>
+					
+					<?php } ?>
+					
+					<div class="start-overlay"></div>
+				</div>
+			 
+			 
+			<?php }else if ($selectMainBackground == "default"){ ?>
+			  
+			  	<div class="start-right">
+					<img src="<?php the_field('branding_logo', 'option'); ?>" alt="Video Library 1.0" />
+				</div>
+			
+			<?php }else{ ?>
+			 
+			 	<div class="start-right">
+					<div class="right-title"><?php the_field('custom_title');?></div>
+				</div>
+			 
+			<?php } ?>
+			
+			
+			
+			
 		</div>

@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Montserrat:400,600,700');
 
+@font-face {font-family: "Liberator"; src: url("//db.onlinewebfonts.com/t/5d7e9c15851618f02f88a3afad26de8d.eot"); src: url("//db.onlinewebfonts.com/t/5d7e9c15851618f02f88a3afad26de8d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5d7e9c15851618f02f88a3afad26de8d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5d7e9c15851618f02f88a3afad26de8d.woff") format("woff"), url("//db.onlinewebfonts.com/t/5d7e9c15851618f02f88a3afad26de8d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5d7e9c15851618f02f88a3afad26de8d.svg#Liberator") format("svg"); }
+
 body {
 	position: fixed;
     top: 0px;
@@ -63,6 +65,29 @@ a{
 	height: 100%;
 	width: 100%;
 	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.right-title{
+	font-family: 'liberatormedium';
+	color:rgba(255, 255, 255, 0.7);
+	font-size: calc(34px + (34 - 10) * ((100vw - 300px) / (1600 - 300)));
+	z-index: 2;
+	letter-spacing: 0.125em;
+	text-shadow: 0px 0px 17px black;
+}
+
+.start-overlay{
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
 }
 
 .instructions{
@@ -80,6 +105,7 @@ a{
 
 .default-video-cover .start-right img{
 	max-width: calc(100% - 80px);
+	z-index: 2;
 }
 
 .menu-btn .material-icons{
@@ -273,6 +299,7 @@ iframe,
 }
 
 .menu-title{
+	text-transform: uppercase;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -289,7 +316,7 @@ iframe,
 	min-height: 61px;
 	line-height: 0.5em; 
 	font-size: 16px;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.1em;
 }
 
 .close-menu{
@@ -338,6 +365,7 @@ iframe,
 	line-height: 1.25em;
 	transition: all 0.5s;
 	cursor: pointer;
+	box-shadow: inset 0px 0px 10px black
 }
 
 .video-menu li h2{
@@ -429,10 +457,18 @@ form button{
 	top:-10px;
 }
 
+.acc-head{
+	box-shadow: none;
+	transition: all 0.5s;
+}
 
 li > .acc-head.active  {
 	background-color: #1f1f1f;
+	box-shadow: 0px 0px 20px black;
+	z-index: 999;
 }
+
+
 .video-link{
 	text-indent: 5px;
 	padding: 8px 5px 7px 0;
@@ -495,6 +531,8 @@ li > .acc-head.active  {
     background-color: #5d5c5c;
 }
 
+/* Admin Stuff */
+
 #wpadminbar{
 	margin-top: -15px;
 	opacity: 0;
@@ -533,3 +571,4 @@ li > .acc-head.active  {
         top: -30px
     }
 }
+
