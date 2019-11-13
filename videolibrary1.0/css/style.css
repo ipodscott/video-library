@@ -514,6 +514,59 @@ li > .acc-head.active  {
 	cursor: pointer;
 }
 
+/* Password Stuff */
+
+
+.password-overlay{
+	display: flex;
+	align-items: center;
+	background-color: #1a1a1a;
+	justify-content: center;
+	position: fixed;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.79);
+	width: 100%;
+	height: 100%;
+	color: #000;
+}
+
+.page-login{
+	background-color: #fff;
+	color: #fff;
+	padding: 10px;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333;
+	background-color: #141414;
+}
+
+.page-login .login-remember{
+	display: block;
+	text-align: right;
+	
+}
+
+.page-login .login-remember input{
+	float: left;
+	display: inline;
+	max-width: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.page-login #loginform label{
+	width: 100%;
+	max-width: 240px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*Scroll Bar Stuff*/
+
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #333;
