@@ -13,8 +13,8 @@ WordPress and ACF based video library supports remote url mp4, uploaded mp4, and
 > Note: For youtube you only need each video's unique youtube id. See the highlighted section in screenshot below:
 ![YouTube id screenshot](http://video.scottsaunders.design/yt_screenshot.png "YouTube id screenshot")
 ## Demos
->[Default Look](https://video.hazzardlabs.com/ "Video Library 1.0 Demo")
->[Custom Background with Title](https://video.hazzardlabs.com/african-american-cinema/")
+![Default Look](https://video.hazzardlabs.com/ "Video Library 1.0 Demo")
+![Custom Background with Title](https://video.hazzardlabs.com/african-american-cinema/")
 ## The following resolutions are supported:
 + 16x9
 + Widescreen
