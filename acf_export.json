@@ -47,6 +47,51 @@
         "description": ""
     },
     {
+        "key": "group_5dd9a59ca0ad3",
+        "title": "Episode Count",
+        "fields": [
+            {
+                "key": "field_5dd9a5a8e6907",
+                "label": "Episode Count",
+                "name": "episode_count",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "video_category",
+                "field_type": "select",
+                "allow_null": 0,
+                "add_term": 0,
+                "save_terms": 0,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
         "key": "group_5dcb2ada95be8",
         "title": "Main Background",
         "fields": [
@@ -255,7 +300,7 @@
                 "allow_null": 0,
                 "multiple": 0,
                 "ui": 1,
-                "ajax": 1,
+                "ajax": 0,
                 "return_format": "value",
                 "placeholder": ""
             },

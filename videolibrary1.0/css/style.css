@@ -48,6 +48,17 @@ a{
 	cursor: pointer;
 }
 
+.fullscreen-btn{
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 999;
+	cursor: pointer;
+}
+
 .default-video-cover{
 	display: block;
 	position: fixed;
@@ -77,6 +88,7 @@ a{
 	z-index: 2;
 	letter-spacing: 0.125em;
 	text-shadow: 0px 0px 17px black;
+	color: #999;
 }
 
 .start-overlay{
@@ -372,7 +384,7 @@ iframe,
 	margin: 0 0 0 0;
 	padding: 20px 20px 20px 20px;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: calc(16px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
 	cursor: pointer;
 	text-transform: uppercase;
 	background-color: #000;	
@@ -479,7 +491,7 @@ li > .acc-head.active  {
 	line-height: 1em;
 	margin: 0 auto 10px auto;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: calc(9px + (9 - 6) * ((100vw - 300px) / (1600 - 300)));
 	text-transform: uppercase;
 	border-width: 1px;
 	border-color: #333;
@@ -497,7 +509,7 @@ li > .acc-head.active  {
 .video-link .material-icons{
 	display: inline-block;
 	position: relative;
-	font-size: 14px;
+	font-size: calc(9px + (9 - 6) * ((100vw - 300px) / (1600 - 300)));
 	top:1px;
 	padding: 0 5px 0 0;
 }
@@ -509,7 +521,7 @@ li > .acc-head.active  {
 }
 
 .video-link.active{
-	background-color: #000;
+	background-color: #75000d;
 	color: #fff;
 	cursor: pointer;
 }

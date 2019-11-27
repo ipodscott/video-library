@@ -61,9 +61,9 @@
 		
 			<div class="main-content">
 			<div class="movie-box">
-				<div class="movie">
+				<div id="mainVideo" class="movie">
 					<div class="vid-box">
-						<div class="vid-holder">
+						<div id="videoBox" class="vid-holder">
 								<img class="sixteen-nine-img" src="<?php bloginfo('template_directory'); ?>/img/16x9_bg.png" />
 								<img class="widescreen-img" src="<?php bloginfo('template_directory'); ?>/img/bg_widescreen.gif" />
 								<img class="pano-img" src="<?php bloginfo('template_directory'); ?>/img/pano.gif" />
