@@ -59,6 +59,13 @@ a{
 	cursor: pointer;
 }
 
+
+
+
+@media (max-width:1112px) {
+	.fullscreen-btn{display: none;};
+}
+
 .default-video-cover{
 	display: block;
 	position: fixed;
@@ -637,3 +644,7 @@ li > .acc-head.active  {
     }
 }
 
+
+.edit-post-meta-boxes-area #poststuff .stuffbox>h3, .edit-post-meta-boxes-area #poststuff h2.hndle, .edit-post-meta-boxes-area #poststuff h3.hndle{
+	background-color: #336699;
+}

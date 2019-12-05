@@ -47,11 +47,102 @@
         "description": ""
     },
     {
-        "key": "group_5dd9a59ca0ad3",
-        "title": "Episode Count",
+        "key": "group_5de1b30a9dd04",
+        "title": "Settings",
         "fields": [
             {
-                "key": "field_5dd9a5a8e6907",
+                "key": "field_5de1b328c8a4c",
+                "label": "Add Custom Load Image",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_5de1b350c8a4d",
+                "label": "Use Custom Load Image",
+                "name": "select_load_image",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "Default",
+                    "custom": "Custom"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5de1b381c8a4e",
+                "label": "Custom Brand Image",
+                "name": "branding_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5de1b350c8a4d",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5de1b44c8438b",
+                "label": "Episode Count",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_5de1b4038438a",
                 "label": "Episode Count",
                 "name": "episode_count",
                 "type": "taxonomy",
@@ -64,39 +155,33 @@
                     "id": ""
                 },
                 "taxonomy": "video_category",
-                "field_type": "select",
-                "allow_null": 0,
+                "field_type": "checkbox",
                 "add_term": 0,
                 "save_terms": 0,
                 "load_terms": 0,
                 "return_format": "id",
-                "multiple": 0
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "page"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "side",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": ""
-    },
-    {
-        "key": "group_5dcb2ada95be8",
-        "title": "Main Background",
-        "fields": [
+                "multiple": 0,
+                "allow_null": 0
+            },
             {
-                "key": "field_5dcb2c05329a9",
+                "key": "field_5de1b4818438c",
+                "label": "Main Background",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_5de1b4b28438d",
                 "label": "Select Main Background",
                 "name": "select_main_background",
                 "type": "select",
@@ -121,7 +206,7 @@
                 "placeholder": ""
             },
             {
-                "key": "field_5dcb2ae9c5348",
+                "key": "field_5de1b4f48438e",
                 "label": "Main Background Image",
                 "name": "main_background_image",
                 "type": "image",
@@ -130,7 +215,7 @@
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5dcb2c05329a9",
+                            "field": "field_5de1b4b28438d",
                             "operator": "==",
                             "value": "custom_background"
                         }
@@ -153,7 +238,7 @@
                 "mime_types": ""
             },
             {
-                "key": "field_5dcc0be2532c1",
+                "key": "field_5de1b5518438f",
                 "label": "Custom Branding",
                 "name": "custom_branding",
                 "type": "select",
@@ -162,7 +247,7 @@
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5dcb2c05329a9",
+                            "field": "field_5de1b4b28438d",
                             "operator": "==",
                             "value": "custom_background"
                         }
@@ -187,7 +272,7 @@
                 "placeholder": ""
             },
             {
-                "key": "field_5dcc0ca7f5087",
+                "key": "field_5de1b58784390",
                 "label": "Custom Text",
                 "name": "custom_text",
                 "type": "text",
@@ -196,12 +281,12 @@
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5dcc0be2532c1",
+                            "field": "field_5de1b5518438f",
                             "operator": "==",
                             "value": "text"
                         },
                         {
-                            "field": "field_5dcb2c05329a9",
+                            "field": "field_5de1b4b28438d",
                             "operator": "==",
                             "value": "custom_background"
                         }
@@ -219,7 +304,7 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5dcc0cc4f5088",
+                "key": "field_5de1b5c784392",
                 "label": "Custom Logo",
                 "name": "custom_logo",
                 "type": "image",
@@ -228,12 +313,12 @@
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_5dcc0be2532c1",
+                            "field": "field_5de1b5518438f",
                             "operator": "==",
                             "value": "image"
                         },
                         {
-                            "field": "field_5dcb2c05329a9",
+                            "field": "field_5de1b4b28438d",
                             "operator": "==",
                             "value": "custom_background"
                         }
@@ -439,8 +524,98 @@
         "title": "Video Menu Builder",
         "fields": [
             {
+                "key": "field_5de283a1b57ca",
+                "label": "Include Summary",
+                "name": "include_summary",
+                "type": "true_false",
+                "instructions": "Checking this will add a top menu item with the default page content, above the available or related videos available on this page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5de28411b57cb",
+                "label": "Menu Active",
+                "name": "menu_active",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5de283a1b57ca",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5de286e94254d",
+                "label": "Menu Title",
+                "name": "menu_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5de283a1b57ca",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5de284dc6a4d9",
+                "label": "Show\/Hide Menu Items",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
                 "key": "field_5dc5b3e0ea0f1",
-                "label": "Video Menu Builder",
+                "label": "Menu Items",
                 "name": "video_menu_builder",
                 "type": "repeater",
                 "instructions": "",

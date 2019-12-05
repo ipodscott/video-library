@@ -47,7 +47,7 @@
 		}
 		
 		.load-overlay img{
-			width: 280px;
+			width: 400px;
 			max-width: calc(100% - 40px);
 			padding: 10px;
 			margin: 0 0 0 0;
