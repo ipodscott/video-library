@@ -59,7 +59,7 @@
 	</head>
 	<body>
 		
-			<div class="main-content">
+		<div class="main-content">
 			<div class="movie-box">
 				<div id="mainVideo" class="movie">
 					<div class="vid-box">
