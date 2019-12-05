@@ -39,8 +39,8 @@ $( document ).ready(function() {
 	
 	$( ".mp4-link" ).click(function() {
 		videoChange();
-		$('.vidFrame').hide();
-		$('.vidFrame').attr("src", "empty");
+		$('.vidFrame, .vimFrame').hide();
+		$('.vidFrame, .vimFrame').attr("src", "empty");
 		$('.myVideo').attr("src", $(this).attr("mp4url"));
 		$('.myVideo').show(function(){
 			 document.getElementById('myVideo').play();

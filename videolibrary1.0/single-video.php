@@ -3,6 +3,10 @@
 	<?php $selectVid = get_field('select_video_source'); if($selectVid == "youtube"){ ?>
 			
 		<iframe frameborder="0" src="https://www.youtube.com/embed/<?php the_field('youtube_id');?>?rel=0"></iframe>
+	
+	<?php }else if ($selectVid == "vimeo"){ ?>
+						  	
+		<iframe class="vimFrame" src="https://player.vimeo.com/video/<?php the_field('vimeo_id');?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>				  	
 								  
 	<?php }else if ($selectVid == "mp4_upload"){ ?>
 								   

@@ -379,7 +379,8 @@
                 "choices": {
                     "youtube": "YouTube",
                     "mp4_upload": "MP4 Upload",
-                    "remote_mp4": "Remote Mp4"
+                    "remote_mp4": "Remote Mp4",
+                    "vimeo": "Vimeo"
                 },
                 "default_value": [],
                 "allow_null": 0,
@@ -432,6 +433,33 @@
                             "field": "field_5db4f0ae72d2e",
                             "operator": "==",
                             "value": "youtube"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5de9206857042",
+                "label": "Vimeo ID",
+                "name": "vimeo_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5db4f0ae72d2e",
+                            "operator": "==",
+                            "value": "vimeo"
                         }
                     ]
                 ],
@@ -812,7 +840,8 @@
                                         "choices": {
                                             "youtube": "YouTube",
                                             "mp4_upload": "MP4 Upload",
-                                            "remote_mp4": "Remote Mp4"
+                                            "remote_mp4": "Remote Mp4",
+                                            "vimeo": "Vimeo"
                                         },
                                         "default_value": [],
                                         "allow_null": 0,
@@ -865,6 +894,33 @@
                                                     "field": "field_5dc5bb5232cb5",
                                                     "operator": "==",
                                                     "value": "youtube"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5de920fb97dc0",
+                                        "label": "Vimeo ID",
+                                        "name": "vimeo_id",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_5dc5bb5232cb5",
+                                                    "operator": "==",
+                                                    "value": "vimeo"
                                                 }
                                             ]
                                         ],

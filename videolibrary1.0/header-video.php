@@ -9,30 +9,7 @@
 	<?php wp_head(); ?>
 	<style>
 		.load-overlay{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: fixed;
-			width: 100%;
-			height: 100vh;
-			top:0px;
-			left: 0px;
-			background-color: #1a1a1a;
-			z-index: 999;
-			color: #fff;
-			font-size: calc(18px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
-			letter-spacing: 0.5em;
-		}
-		
-		.load-overlay div{
-			text-align: center;
-		}
-		
-		.load-overlay img{
-			width: 280px;
-			max-width: calc(100% - 40px);
-			padding: 10px;
-			margin: 0 0 0 0;
+			display: none !important;
 		}
 		
 	
@@ -40,3 +17,6 @@
 	
 	</head>
 	<body>
+		
+		
+		
