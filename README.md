@@ -16,7 +16,7 @@ WordPress and ACF based video library supports remote url mp4, uploaded mp4, and
 + [Default Look](https://video.hazzardlabs.com/ "Default")
 + [Custom Background with Default Title](https://video.hazzardlabs.com/african-american-cinema/ "Custom Background with Default Title")
 + [Custom Image Background with Image Logo Overlay](https://video.hazzardlabs.com/dumont "Custom Image Background with Image Logo Overlay")
-+ [Password Protect Page](http://video.scottsaunders.design/look-at-life/ "Added user with no assigned roll to only view specific pages un:sampleuser pw:samplepass")
++ [Password Protected Page](http://video.scottsaunders.design/look-at-life/ "Added user with no assigned roll to only view specific pages un:sampleuser pw:samplepass")
 ## The following resolutions are supported:
 + 16x9
 + Widescreen
