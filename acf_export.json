@@ -380,7 +380,8 @@
                     "youtube": "YouTube",
                     "mp4_upload": "MP4 Upload",
                     "remote_mp4": "Remote Mp4",
-                    "vimeo": "Vimeo"
+                    "vimeo": "Vimeo",
+                    "wistia": "Wistia"
                 },
                 "default_value": [],
                 "allow_null": 0,
@@ -460,6 +461,33 @@
                             "field": "field_5db4f0ae72d2e",
                             "operator": "==",
                             "value": "vimeo"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5deafc1645289",
+                "label": "Wistia ID",
+                "name": "wistia_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5db4f0ae72d2e",
+                            "operator": "==",
+                            "value": "wistia"
                         }
                     ]
                 ],
@@ -841,7 +869,8 @@
                                             "youtube": "YouTube",
                                             "mp4_upload": "MP4 Upload",
                                             "remote_mp4": "Remote Mp4",
-                                            "vimeo": "Vimeo"
+                                            "vimeo": "Vimeo",
+                                            "wistia": "Wistia"
                                         },
                                         "default_value": [],
                                         "allow_null": 0,
@@ -921,6 +950,33 @@
                                                     "field": "field_5dc5bb5232cb5",
                                                     "operator": "==",
                                                     "value": "vimeo"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5deafbc399332",
+                                        "label": "Wistia",
+                                        "name": "wistia_id",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_5dc5bb5232cb5",
+                                                    "operator": "==",
+                                                    "value": "wistia"
                                                 }
                                             ]
                                         ],

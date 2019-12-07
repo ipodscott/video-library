@@ -6,7 +6,11 @@
 	
 	<?php }else if ($selectVid == "vimeo"){ ?>
 						  	
-		<iframe class="vimFrame" src="https://player.vimeo.com/video/<?php the_field('vimeo_id');?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>				  	
+		<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id');?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+		
+	<?php }else if ($selectVid == "wistia"){ ?>
+						  	
+		<iframe src="https://fast.wistia.net/embed/iframe/<?php the_field('wistia_id');?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>				  	
 								  
 	<?php }else if ($selectVid == "mp4_upload"){ ?>
 								   

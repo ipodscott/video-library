@@ -22,8 +22,10 @@
 			<ul class="video-menu">
 				
 				<?php include('main_video_menu.php');?>
-																
+					<img class="footer-img" src="<?php bloginfo('template_directory'); ?>/img/video_footer_dark.svg"/>											
 			</ul>
+			
+			
 		</div>
 		
 		
